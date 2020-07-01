@@ -9,12 +9,13 @@
 
 	<h3>Sign Up Form</h3>
 
-	<form action="/welcome" method="get">
+	<form action="/sapa" method="post">
+		@csrf
 		<p><label>First Name :</label></p>
-		<p><input type="text"></p>
+		<p><input type="text" name="nama1"></p>
 
 		<p><label>Last Name :</label></p>
-		<p><input type="text"></p>
+		<p><input type="text"  name="nama2"></p>
 
 		<p><label>Gender :</label></p>
 		<input type="radio" name="gender" value="0" checked>Male <br>

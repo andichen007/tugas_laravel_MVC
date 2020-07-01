@@ -14,7 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
-*/
 
 Route::get('/form', function () {
     return view('form');
@@ -24,6 +23,18 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+
+*/
 Route::get('/', 'HomeController@index');
+
+Route::get('/form', 'AuthController@form');
+
+Route::get('/sapa', 'AuthController@sapa');
+Route::post('/sapa', 'AuthController@sapa_post');
+
+
+
+
+
 
 
